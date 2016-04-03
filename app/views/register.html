@@ -1,0 +1,19 @@
+<div class="well row">
+	<form action="" method="POST" role="form">
+		<legend>Dodaj użytkownika</legend>
+	
+		<div class="form-group">
+			<label for="">Email</label>
+			<input type="email" class="form-control" ng-model="user.email" placeholder="Twój Email">
+		</div>
+		<div class="form-group">
+			<label for="">Hasło</label>
+			<input type="password" class="form-control" ng-model="user.password" placeholder="Twoje hasło">
+		</div>
+	
+		
+	
+		<a ng-click="add(user)" class="btn btn-primary"></a>
+		{{komunikat}}
+	</form>
+</div>

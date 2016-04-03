@@ -1,0 +1,16 @@
+<div class="well row">
+	<form role="form">
+		<legend>Dodaj wydawnostwo</legend>
+		<div class="form-group">
+			<label for="">Wydawnoctwo</label>
+			<input type="text" class="form-control" ng-model="publish.name" placeholder="Input field">
+		</div>
+	
+		
+	
+		<a ng-click="addNew(publish)" class="btn btn-primary">Dodaj</a>
+	</form>
+	<ul ng-repeat="pub in publishing">
+		<li >{{pub.name}} <a class="btn btn-xs btn-danger" ng-click="delete(pub._id)">X</a></li>
+	</ul>
+</div>

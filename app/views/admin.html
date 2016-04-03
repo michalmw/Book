@@ -1,0 +1,28 @@
+<div class="well row">
+	<h3>Dodaj Kategorie</h3>
+	<div class="col-md-12">
+	<form action="" method="POST" class="form-horizontal" role="form">
+			
+	
+		<div class="form-group">
+			<label for="input" class="col-sm-2 control-label">Nazwa kategorii:</label>
+			<div class="col-sm-10">
+				<input type="text" name="" id="input" class="form-control" ng-model="newCategory.name">
+			</div>
+		</div>
+		<input placeholder="SubKategoria" type="text" ng-model="newCategory.subcategoryName" class="form-control">
+			<a ng-click="addSub(newCategory.subcategoryName)" class="btn btn-default pull-right">DodajSubkategorie</a>
+		<hr>
+
+		<ul ng-repeat="sub in newCategory.subcategory">
+			<li >{{sub}}</li>
+		</ul>
+		<a ng-click="addCategory(newCategory)" class="pull-right btn btn-success">Dodaj</a>
+	</form>
+	<hr>
+	<ul ng-repeat="cat in category">
+		<li>{{cat.name}} <br>
+			sub: <strong ng-repeat="sub in cat.subcategory">{{sub}}, </strong>
+			</li>
+	</ul>
+</div>

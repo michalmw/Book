@@ -1,0 +1,28 @@
+<div class="well row">
+	<form action="" method="POST" class="form-horizontal" role="form">
+			<div class="form-group">
+				<legend>Dodawanie książki</legend>
+			</div>
+	
+			<ui-select ng-model="selected.value">
+					<ui-select-match>
+						<span ng-bind="$select.selected.name"></span>
+    				</ui-select-match>
+				    <ui-select-choices repeat="item in (authors)">
+				        <span ng-bind="item.name"></span>
+				    </ui-select-choices>
+				</ui-select>
+	
+			<div class="form-group">
+				<div class="col-sm-10 col-sm-offset-2">
+					<a ng-click="addBook(book)" class="btn btn-primary">Dodaj</a>
+				</div>
+			</div>
+	</form>
+	<hr>
+	{{authors}}
+	<hr>
+	{{publishinghouses}}
+	<hr>
+	{{categories}}
+</div>

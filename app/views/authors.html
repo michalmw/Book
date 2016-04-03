@@ -1,0 +1,19 @@
+<div class="col-md-12 row">
+	<a href="#/author" class="btn btn-success pull-right">Dodaj Nowego</a>
+	 <div class="col-md-6 " ng-repeat="author in authors">
+	 	<div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <img src="/img/author/{{author.url}}" alt="" class="img-rounded img-responsive" />
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4>
+                            {{author.name}}</h4>
+                       	<p>
+                       		<a ng-click="delete(author._id)" class="btn btn-danger">Usuń</a>
+                       	</p>
+                    </div>
+                </div>
+            </div>
+	 </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "bok",
+  "version": "1.0.0",
+  "description": "book for sabina",
+  "main": "server.js",
+  "scripts": {
+    "test": "no",
+    "start": "node server.js"
+  },
+  "author": "Surprise.Design",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "connect-mongo": "^1.1.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.10",
+    "morgan": "^1.7.0",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "session": "^0.1.0"
+  }
+}
